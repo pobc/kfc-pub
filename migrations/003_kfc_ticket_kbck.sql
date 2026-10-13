@@ -1,0 +1,2 @@
+ALTER TABLE kfc_tickets
+ADD COLUMN IF NOT EXISTS kbck varchar(255) NOT NULL DEFAULT '';

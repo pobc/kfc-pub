@@ -1,0 +1,978 @@
+{
+  "skuBase": {
+    "skus": [
+      {
+        "propPath": "5919063:4133457874;165354720:9416467465",
+        "skuId": "6218234774847"
+      },
+      {
+        "propPath": "5919063:26106719585;165354720:9416467465",
+        "skuId": "6218234774831"
+      },
+      {
+        "propPath": "5919063:23786198534;165354720:9416467465",
+        "skuId": "6218234774823"
+      },
+      {
+        "propPath": "5919063:12174626010;165354720:9416467465",
+        "skuId": "6218234774807"
+      },
+      {
+        "propPath": "5919063:17305672181;165354720:9416467465",
+        "skuId": "6218234774815"
+      },
+      {
+        "propPath": "5919063:33184612412;165354720:9416467465",
+        "skuId": "6218234774839"
+      },
+      {
+        "propPath": "5919063:43054903335;165354720:9416467465",
+        "skuId": "6218234774855"
+      },
+      {
+        "propPath": "5919063:4133457874;165354720:31371780896",
+        "skuId": "6218234774841"
+      },
+      {
+        "propPath": "5919063:26106719585;165354720:31371780896",
+        "skuId": "6218234774825"
+      },
+      {
+        "propPath": "5919063:23786198534;165354720:31371780896",
+        "skuId": "6218234774817"
+      },
+      {
+        "propPath": "5919063:12174626010;165354720:31371780896",
+        "skuId": "6218234774801"
+      },
+      {
+        "propPath": "5919063:17305672181;165354720:31371780896",
+        "skuId": "6218234774809"
+      },
+      {
+        "propPath": "5919063:33184612412;165354720:31371780896",
+        "skuId": "6218234774833"
+      },
+      {
+        "propPath": "5919063:43054903335;165354720:31371780896",
+        "skuId": "6218234774849"
+      },
+      {
+        "propPath": "5919063:4133457874;165354720:43054928159",
+        "skuId": "6218234774843"
+      },
+      {
+        "propPath": "5919063:26106719585;165354720:43054928159",
+        "skuId": "6218234774827"
+      },
+      {
+        "propPath": "5919063:23786198534;165354720:43054928159",
+        "skuId": "6218234774819"
+      },
+      {
+        "propPath": "5919063:12174626010;165354720:43054928159",
+        "skuId": "6218234774803"
+      },
+      {
+        "propPath": "5919063:17305672181;165354720:43054928159",
+        "skuId": "6218234774811"
+      },
+      {
+        "propPath": "5919063:33184612412;165354720:43054928159",
+        "skuId": "6218234774835"
+      },
+      {
+        "propPath": "5919063:43054903335;165354720:43054928159",
+        "skuId": "6218234774851"
+      },
+      {
+        "propPath": "5919063:4133457874;165354720:17218229075",
+        "skuId": "6218234774840"
+      },
+      {
+        "propPath": "5919063:26106719585;165354720:17218229075",
+        "skuId": "6218234774824"
+      },
+      {
+        "propPath": "5919063:23786198534;165354720:17218229075",
+        "skuId": "6218234774816"
+      },
+      {
+        "propPath": "5919063:12174626010;165354720:17218229075",
+        "skuId": "6218234774800"
+      },
+      {
+        "propPath": "5919063:17305672181;165354720:17218229075",
+        "skuId": "6218234774808"
+      },
+      {
+        "propPath": "5919063:33184612412;165354720:17218229075",
+        "skuId": "6218234774832"
+      },
+      {
+        "propPath": "5919063:43054903335;165354720:17218229075",
+        "skuId": "6218234774848"
+      },
+      {
+        "propPath": "5919063:4133457874;165354720:43054928160",
+        "skuId": "6218234774844"
+      },
+      {
+        "propPath": "5919063:26106719585;165354720:43054928160",
+        "skuId": "6218234774828"
+      },
+      {
+        "propPath": "5919063:23786198534;165354720:43054928160",
+        "skuId": "6218234774820"
+      },
+      {
+        "propPath": "5919063:12174626010;165354720:43054928160",
+        "skuId": "6218234774804"
+      },
+      {
+        "propPath": "5919063:17305672181;165354720:43054928160",
+        "skuId": "6218234774812"
+      },
+      {
+        "propPath": "5919063:33184612412;165354720:43054928160",
+        "skuId": "6218234774836"
+      },
+      {
+        "propPath": "5919063:43054903335;165354720:43054928160",
+        "skuId": "6218234774852"
+      },
+      {
+        "propPath": "5919063:4133457874;165354720:43054928161",
+        "skuId": "6218234774845"
+      },
+      {
+        "propPath": "5919063:26106719585;165354720:43054928161",
+        "skuId": "6218234774829"
+      },
+      {
+        "propPath": "5919063:23786198534;165354720:43054928161",
+        "skuId": "6218234774821"
+      },
+      {
+        "propPath": "5919063:12174626010;165354720:43054928161",
+        "skuId": "6218234774805"
+      },
+      {
+        "propPath": "5919063:17305672181;165354720:43054928161",
+        "skuId": "6218234774813"
+      },
+      {
+        "propPath": "5919063:33184612412;165354720:43054928161",
+        "skuId": "6218234774837"
+      },
+      {
+        "propPath": "5919063:43054903335;165354720:43054928161",
+        "skuId": "6218234774853"
+      },
+      {
+        "propPath": "5919063:4133457874;165354720:43054928162",
+        "skuId": "6218234774846"
+      },
+      {
+        "propPath": "5919063:26106719585;165354720:43054928162",
+        "skuId": "6218234774830"
+      },
+      {
+        "propPath": "5919063:23786198534;165354720:43054928162",
+        "skuId": "6218234774822"
+      },
+      {
+        "propPath": "5919063:12174626010;165354720:43054928162",
+        "skuId": "6218234774806"
+      },
+      {
+        "propPath": "5919063:17305672181;165354720:43054928162",
+        "skuId": "6218234774814"
+      },
+      {
+        "propPath": "5919063:33184612412;165354720:43054928162",
+        "skuId": "6218234774838"
+      },
+      {
+        "propPath": "5919063:43054903335;165354720:43054928162",
+        "skuId": "6218234774854"
+      },
+      {
+        "propPath": "5919063:4133457874;165354720:36206204553",
+        "skuId": "6218234774842"
+      },
+      {
+        "propPath": "5919063:26106719585;165354720:36206204553",
+        "skuId": "6218234774826"
+      },
+      {
+        "propPath": "5919063:23786198534;165354720:36206204553",
+        "skuId": "6218234774818"
+      },
+      {
+        "propPath": "5919063:12174626010;165354720:36206204553",
+        "skuId": "6218234774802"
+      },
+      {
+        "propPath": "5919063:17305672181;165354720:36206204553",
+        "skuId": "6218234774810"
+      },
+      {
+        "propPath": "5919063:33184612412;165354720:36206204553",
+        "skuId": "6218234774834"
+      },
+      {
+        "propPath": "5919063:43054903335;165354720:36206204553",
+        "skuId": "6218234774850"
+      }
+    ],
+    "props": [
+      {
+        "hasGroupTags": "false",
+        "packProp": "false",
+        "shouldGroup": "false",
+        "comboProperty": "false",
+        "values": [
+          {
+            "comboPropertyValue": "false",
+            "vid": "4133457874",
+            "corner": {},
+            "name": "1个老北京鸡肉卷"
+          },
+          {
+            "comboPropertyValue": "false",
+            "vid": "26106719585",
+            "corner": {},
+            "name": "1个老北京鸡肉卷+1份小鸡米花"
+          },
+          {
+            "comboPropertyValue": "false",
+            "vid": "23786198534",
+            "corner": {},
+            "name": "1个老北京鸡肉卷+1块吮指原味鸡"
+          },
+          {
+            "comboPropertyValue": "false",
+            "vid": "12174626010",
+            "corner": {},
+            "name": "1个老北京鸡肉卷+1份中薯条"
+          },
+          {
+            "comboPropertyValue": "false",
+            "vid": "17305672181",
+            "corner": {},
+            "name": "1个老北京鸡肉卷+5块黄金鸡块"
+          },
+          {
+            "comboPropertyValue": "false",
+            "vid": "33184612412",
+            "corner": {},
+            "name": "1个老北京鸡肉卷+2块香辣鸡翅"
+          },
+          {
+            "comboPropertyValue": "false",
+            "vid": "43054903335",
+            "corner": {},
+            "name": "1个老北京鸡肉卷+2块新奥尔良烤翅"
+          }
+        ],
+        "hasImage": "false",
+        "pid": "5919063",
+        "name": "套餐类型",
+        "showSizeRecommend": "false",
+        "valueMap": {
+          "4133457874": {
+            "comboPropertyValue": "false",
+            "vid": "4133457874",
+            "corner": {},
+            "name": "1个老北京鸡肉卷"
+          },
+          "26106719585": {
+            "comboPropertyValue": "false",
+            "vid": "26106719585",
+            "corner": {},
+            "name": "1个老北京鸡肉卷+1份小鸡米花"
+          },
+          "23786198534": {
+            "comboPropertyValue": "false",
+            "vid": "23786198534",
+            "corner": {},
+            "name": "1个老北京鸡肉卷+1块吮指原味鸡"
+          },
+          "12174626010": {
+            "comboPropertyValue": "false",
+            "vid": "12174626010",
+            "corner": {},
+            "name": "1个老北京鸡肉卷+1份中薯条"
+          },
+          "17305672181": {
+            "comboPropertyValue": "false",
+            "vid": "17305672181",
+            "corner": {},
+            "name": "1个老北京鸡肉卷+5块黄金鸡块"
+          },
+          "33184612412": {
+            "comboPropertyValue": "false",
+            "vid": "33184612412",
+            "corner": {},
+            "name": "1个老北京鸡肉卷+2块香辣鸡翅"
+          },
+          "43054903335": {
+            "comboPropertyValue": "false",
+            "vid": "43054903335",
+            "corner": {},
+            "name": "1个老北京鸡肉卷+2块新奥尔良烤翅"
+          }
+        }
+      },
+      {
+        "hasGroupTags": "false",
+        "packProp": "false",
+        "shouldGroup": "false",
+        "comboProperty": "false",
+        "values": [
+          {
+            "comboPropertyValue": "false",
+            "vid": "9416467465",
+            "corner": {
+              "cornerBackgroundColor": "#ff5000",
+              "skuCornerIcon": "",
+              "cornerPVPath": "165354720:9416467465",
+              "cornerBorderColor": "#FFFFFF",
+              "cornerTextColor": "#FFFFFF",
+              "cornerText": "近期热销"
+            },
+            "name": "单点上面"
+          },
+          {
+            "comboPropertyValue": "false",
+            "vid": "31371780896",
+            "corner": {},
+            "name": "1只葡式蛋挞+1杯中可乐"
+          },
+          {
+            "comboPropertyValue": "false",
+            "vid": "43054928159",
+            "corner": {},
+            "name": "1只葡式蛋挞+1杯桂花酸梅汤（大）"
+          },
+          {
+            "comboPropertyValue": "false",
+            "vid": "17218229075",
+            "corner": {},
+            "name": "1只葡式蛋挞+1杯九珍果汁"
+          },
+          {
+            "comboPropertyValue": "false",
+            "vid": "43054928160",
+            "corner": {},
+            "name": "1只葡式蛋挞+1杯热牛奶"
+          },
+          {
+            "comboPropertyValue": "false",
+            "vid": "43054928161",
+            "corner": {},
+            "name": "1个玉米杯+1杯中可乐"
+          },
+          {
+            "comboPropertyValue": "false",
+            "vid": "43054928162",
+            "corner": {},
+            "name": "1杯黑糖圣代+1杯中可乐"
+          },
+          {
+            "comboPropertyValue": "false",
+            "vid": "36206204553",
+            "corner": {},
+            "name": "1杯草莓圣代+1杯中可乐"
+          }
+        ],
+        "hasImage": "false",
+        "pid": "165354720",
+        "name": "套餐名称",
+        "showSizeRecommend": "false",
+        "valueMap": {
+          "9416467465": {
+            "comboPropertyValue": "false",
+            "vid": "9416467465",
+            "corner": {
+              "cornerBackgroundColor": "#ff5000",
+              "skuCornerIcon": "",
+              "cornerPVPath": "165354720:9416467465",
+              "cornerBorderColor": "#FFFFFF",
+              "cornerTextColor": "#FFFFFF",
+              "cornerText": "近期热销"
+            },
+            "name": "单点上面"
+          },
+          "31371780896": {
+            "comboPropertyValue": "false",
+            "vid": "31371780896",
+            "corner": {},
+            "name": "1只葡式蛋挞+1杯中可乐"
+          },
+          "43054928159": {
+            "comboPropertyValue": "false",
+            "vid": "43054928159",
+            "corner": {},
+            "name": "1只葡式蛋挞+1杯桂花酸梅汤（大）"
+          },
+          "17218229075": {
+            "comboPropertyValue": "false",
+            "vid": "17218229075",
+            "corner": {},
+            "name": "1只葡式蛋挞+1杯九珍果汁"
+          },
+          "43054928160": {
+            "comboPropertyValue": "false",
+            "vid": "43054928160",
+            "corner": {},
+            "name": "1只葡式蛋挞+1杯热牛奶"
+          },
+          "43054928161": {
+            "comboPropertyValue": "false",
+            "vid": "43054928161",
+            "corner": {},
+            "name": "1个玉米杯+1杯中可乐"
+          },
+          "43054928162": {
+            "comboPropertyValue": "false",
+            "vid": "43054928162",
+            "corner": {},
+            "name": "1杯黑糖圣代+1杯中可乐"
+          },
+          "36206204553": {
+            "comboPropertyValue": "false",
+            "vid": "36206204553",
+            "corner": {},
+            "name": "1杯草莓圣代+1杯中可乐"
+          }
+        }
+      }
+    ]
+  },
+  "skuCore": {
+    "sku2info": {
+      "0": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "13.9",
+          "priceDesc": "起",
+          "priceMoney": "1390"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774811": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "27",
+          "priceMoney": "2700"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774810": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "31",
+          "priceMoney": "3100"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774809": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "27",
+          "priceMoney": "2700"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774808": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "30",
+          "priceMoney": "3000"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774815": {
+        "quantity": 0,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "9.79",
+          "priceMoney": "979"
+        },
+        "quantityText": "无货"
+      },
+      "6218234774814": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "31",
+          "priceMoney": "3100"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774813": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "28",
+          "priceMoney": "2800"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774812": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "30",
+          "priceMoney": "3000"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774803": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "26.5",
+          "priceMoney": "2650"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774802": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "30.5",
+          "priceMoney": "3050"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774801": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "26.5",
+          "priceMoney": "2650"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774800": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "29.5",
+          "priceMoney": "2950"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774807": {
+        "quantity": 0,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "9.79",
+          "priceMoney": "979"
+        },
+        "quantityText": "无货"
+      },
+      "6218234774806": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "30.5",
+          "priceMoney": "3050"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774805": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "27.5",
+          "priceMoney": "2750"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774804": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "29.5",
+          "priceMoney": "2950"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774827": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "25.5",
+          "priceMoney": "2550"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774826": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "29.5",
+          "priceMoney": "2950"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774825": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "25.5",
+          "priceMoney": "2550"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774824": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "28.5",
+          "priceMoney": "2850"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774831": {
+        "quantity": 0,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "9.79",
+          "priceMoney": "979"
+        },
+        "quantityText": "无货"
+      },
+      "6218234774830": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "29.5",
+          "priceMoney": "2950"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774829": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "26.5",
+          "priceMoney": "2650"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774828": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "28.5",
+          "priceMoney": "2850"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774819": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "26",
+          "priceMoney": "2600"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774818": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "30",
+          "priceMoney": "3000"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774817": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "26",
+          "priceMoney": "2600"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774816": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "29",
+          "priceMoney": "2900"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774823": {
+        "quantity": 0,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "9.79",
+          "priceMoney": "979"
+        },
+        "quantityText": "无货"
+      },
+      "6218234774822": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "30",
+          "priceMoney": "3000"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774821": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "27",
+          "priceMoney": "2700"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774820": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "29",
+          "priceMoney": "2900"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774843": {
+        "quantity": 0,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "9.79",
+          "priceMoney": "979"
+        },
+        "quantityText": "无货"
+      },
+      "6218234774842": {
+        "quantity": 0,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "9.79",
+          "priceMoney": "979"
+        },
+        "quantityText": "无货"
+      },
+      "6218234774841": {
+        "quantity": 0,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "9.79",
+          "priceMoney": "979"
+        },
+        "quantityText": "无货"
+      },
+      "6218234774840": {
+        "quantity": 0,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "9.79",
+          "priceMoney": "979"
+        },
+        "quantityText": "无货"
+      },
+      "6218234774847": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "13.9",
+          "priceMoney": "1390"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774846": {
+        "quantity": 0,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "9.79",
+          "priceMoney": "979"
+        },
+        "quantityText": "无货"
+      },
+      "6218234774845": {
+        "quantity": 0,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "9.79",
+          "priceMoney": "979"
+        },
+        "quantityText": "无货"
+      },
+      "6218234774844": {
+        "quantity": 0,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "9.79",
+          "priceMoney": "979"
+        },
+        "quantityText": "无货"
+      },
+      "6218234774835": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "27",
+          "priceMoney": "2700"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774834": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "31",
+          "priceMoney": "3100"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774833": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "27",
+          "priceMoney": "2700"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774832": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "30",
+          "priceMoney": "3000"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774839": {
+        "quantity": 0,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "9.79",
+          "priceMoney": "979"
+        },
+        "quantityText": "无货"
+      },
+      "6218234774838": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "31",
+          "priceMoney": "3100"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774837": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "28",
+          "priceMoney": "2800"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774836": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "30",
+          "priceMoney": "3000"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774851": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "27.5",
+          "priceMoney": "2750"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774850": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "31.5",
+          "priceMoney": "3150"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774849": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "27.5",
+          "priceMoney": "2750"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774848": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "30.5",
+          "priceMoney": "3050"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774855": {
+        "quantity": 0,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "9.79",
+          "priceMoney": "979"
+        },
+        "quantityText": "无货"
+      },
+      "6218234774854": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "31.5",
+          "priceMoney": "3150"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774853": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "28.5",
+          "priceMoney": "2850"
+        },
+        "quantityText": "有货"
+      },
+      "6218234774852": {
+        "quantity": 200,
+        "price": {
+          "priceColorNew": "#FF5000",
+          "priceText": "30.5",
+          "priceMoney": "3050"
+        },
+        "quantityText": "有货"
+      }
+    }
+  },
+  "item": {
+    "title": "肯德基kfc优惠券老北京鸡肉卷兑换卷代金券全国通用代下单"
+  },
+  "seller": {
+    "shopName": "包子炸鸡店"
+  }
+}

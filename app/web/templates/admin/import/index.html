@@ -1,0 +1,11 @@
+<section class="admin-section admin-panel import-panel" data-panel="import" hidden="">
+<div class="panel-heading"><div><h2>导入卡券</h2><p>手工导入只需要选择餐品、填写批次和卡券码。</p></div></div>
+<form class="import-form" id="coupon-import-form">
+<label>关联餐品<select id="import-product" required=""><option value="">请选择</option></select></label>
+<label>批次名称<input id="import-batch-name" placeholder="例如：8月22日第一批" required=""/></label>
+<label class="form-full">卡券码<textarea id="import-codes" placeholder="每行一个卡券码，也支持英文逗号分隔" required="" rows="10"></textarea></label>
+<div class="form-full import-actions"><small>导入时只保存卡券数据，不生成访问 UUID。</small><button class="button button--primary" type="submit">确认导入</button></div>
+</form>
+<div class="import-result" hidden="" id="import-result"></div>
+</section>
+

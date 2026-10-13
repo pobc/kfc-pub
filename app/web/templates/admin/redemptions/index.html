@@ -1,0 +1,17 @@
+<section class="admin-section admin-panel table-panel redemption-panel" data-panel="redemptions" hidden="">
+<div class="panel-heading">
+<div><span class="redemption-panel__eyebrow">REDEMPTIONS</span><h2>核销管理</h2><p>按餐品和状态查看访问链接、订单及实际分配卡券的核销记录。</p></div>
+<div class="redemption-panel__stats"><span><small>记录总数</small><strong id="redemption-all-total">0</strong></span><span><small>当前结果</small><strong id="redemption-total">0</strong></span></div>
+</div>
+<div class="table-filters redemption-filters">
+<div aria-label="核销餐品类目" class="filter-tabs product-tabs" id="redemption-product-tabs" role="tablist"></div>
+<div class="filter-tabs" id="redemption-status-tabs"><button data-status="" type="button">全部状态</button><button data-status="UNREDEEMED" type="button">未核销</button><button data-status="REDEEMED" type="button">已核销</button><button data-status="INVALID" type="button">已失效</button></div>
+</div>
+<div class="data-table redemption-table">
+<div class="data-row redemption-admin-row table-head"><span>访问 ID</span><span>卡券码</span><span>餐品</span><span>所属平台 / 账号</span><span>状态</span><span>下单时间</span><span>核销时间</span><span>核销餐厅</span></div>
+<div id="redemption-rows"></div>
+<div class="table-empty" hidden="" id="redemption-empty">当前筛选条件下暂无核销记录</div>
+</div>
+<nav aria-label="核销记录分页" class="redemption-pagination" hidden="" id="redemption-pagination"></nav>
+</section>
+

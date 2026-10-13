@@ -1,0 +1,75 @@
+<section class="admin-section admin-panel taobao-price-panel" data-panel="taobao-prices" hidden="">
+  <div class="panel-heading taobao-price-heading">
+    <div class="taobao-price-heading__actions">
+      <button class="button button--dark" id="taobao-login-start" type="button">登录淘宝</button>
+      <button class="button button--primary" disabled hidden id="taobao-login-save" type="button">保存登录信息</button>
+      <button class="text-button text-button--muted" hidden id="taobao-login-cancel" type="button">取消登录</button>
+    </div>
+  </div>
+
+  <div class="taobao-status-grid">
+    <div class="taobao-login-status" id="taobao-login-status">
+      <span class="badge badge--muted" id="taobao-login-state">未登录</span>
+      <span>
+        <strong id="taobao-login-message">请先打开淘宝登录窗口</strong>
+        <small id="taobao-login-detail">登录完成后点击“保存登录信息”，再开始抓取。</small>
+      </span>
+    </div>
+
+    <div class="taobao-price-status" id="taobao-price-status">
+      <span class="badge badge--muted" id="taobao-price-state">未运行</span>
+      <strong id="taobao-price-message">尚未开始抓取</strong>
+      <small id="taobao-price-progress"></small>
+    </div>
+  </div>
+
+  <form class="taobao-scrape-target" id="taobao-scrape-target">
+    <select id="taobao-scrape-keyword" aria-label="选择已保存的搜索关键词" required>
+      <option value="">请选择搜索关键词</option>
+    </select>
+    <button class="button button--primary" disabled id="taobao-price-scrape" type="submit">开始抓取</button>
+  </form>
+
+  <p class="taobao-filter-help">每次抓取前，只清理本次搜索关键词在北京时间今天之前的价格；保留其他关键词、今天及未记录来源的历史数据。</p>
+  <div class="taobao-price-toolbar">
+    <div class="taobao-price-summary">
+      <span><small>商品</small><strong id="taobao-price-product-count">0</strong></span>
+      <span><small>价格项</small><strong id="taobao-price-item-count">0</strong></span>
+      <span><small>最近抓取</small><strong id="taobao-price-latest">—</strong></span>
+    </div>
+
+    <form class="taobao-price-filter" id="taobao-price-filter">
+      <input id="taobao-price-search" maxlength="200" placeholder="搜索商品项，空格分词，任一命中；留空显示全部" />
+      <input id="taobao-price-keywords" maxlength="4020" aria-label="多关键词筛选" placeholder="商品项关键词，用空格分隔，匹配任意一个" />
+      <button class="button button--dark" type="submit">查询</button>
+      <button class="text-button text-button--muted" id="taobao-price-reset" type="button">清空</button>
+      <div class="taobao-keyword-filter-options">
+        <span class="taobao-filter-help">输入框只搜索商品项；复选框只筛选采集来源关键词，多选匹配任意一个；文字和来源条件同时生效。</span>
+        <div class="taobao-keyword-options" id="taobao-price-keyword-options" aria-label="常用关键词"></div>
+      </div>
+    </form>
+  </div>
+
+  <div class="data-table taobao-price-table">
+    <div class="data-row taobao-price-row table-head">
+      <button class="taobao-sort-button" data-sort-label="店铺" data-taobao-sort="shopName" type="button">
+        店铺 <span data-sort-indicator>↕</span>
+      </button>
+      <button class="taobao-sort-button" data-sort-label="商品链接" data-taobao-sort="productUrl" type="button">
+        商品链接 <span data-sort-indicator>↕</span>
+      </button>
+      <button class="taobao-sort-button" data-sort-label="商品项" data-taobao-sort="itemName" type="button">
+        商品项 <span data-sort-indicator>↕</span>
+      </button>
+      <button class="taobao-sort-button" data-sort-label="价格" data-taobao-sort="price" type="button">
+        价格 <span data-sort-indicator>↕</span>
+      </button>
+      <button class="taobao-sort-button active" data-sort-label="抓取时间" data-taobao-sort="scrapedAt" type="button">
+        抓取时间 <span data-sort-indicator>↓</span>
+      </button>
+    </div>
+    <div id="taobao-price-rows"></div>
+    <div class="table-empty" hidden="" id="taobao-price-empty">暂无价格数据，请先执行抓取</div>
+  </div>
+  <div class="redemption-pagination" id="taobao-price-pagination" hidden></div>
+</section>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="noindex,nofollow" name="robots"/>
+  <meta content="#da291c" name="theme-color"/>
+  <link href="/static/favicon-admin.ico" rel="icon"/>
+  <link href="/frontend/admin/css/admin.css" rel="stylesheet"/>
+  <link href="/frontend/admin/css/product-options.css" rel="stylesheet"/>
+  <link href="/frontend/admin/css/taobao-keywords.css" rel="stylesheet"/>
+  <style>
+   [hidden] { display: none !important; }
+   .admin-success-banner {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 2000;
+    min-width: 280px;
+    max-width: min(420px, calc(100vw - 48px));
+    margin: 0;
+    border: 1px solid #c9e6d5;
+    box-shadow: 0 16px 42px rgba(34, 80, 58, .2);
+   }
+   .ticket-open-id code { white-space: normal; overflow-wrap: anywhere; font-size: 11px; }
+  </style>
+  <title>
+   卡券管理
+  </title>
+ </head>
+ <body>
+  <main class="admin-shell">
+   <aside class="admin-sidebar">
+    <div class="admin-brand">
+     <div class="brand-mark">
+      点
+     </div>
+     <span>
+      <strong>
+       卡券管理
+      </strong>
+      <small>
+       管理后台
+      </small>
+     </span>
+    </div>
+    <nav aria-label="后台导航" id="admin-nav">
+     <button data-section="dashboard" type="button">
+      总览
+     </button>
+     <button data-section="kfc-tickets" type="button">
+      KFC Ticket
+     </button>
+     <button data-section="products" type="button">
+      餐品管理
+     </button>
+     <button data-section="taobao-keywords" type="button">
+      淘宝搜索关键词
+     </button>
+     <button data-section="taobao-prices" type="button">
+      淘宝价格
+     </button>
+     <button data-section="access-links" type="button">
+      访问链接
+     </button>
+     <button data-section="import" type="button">
+      导入卡券
+     </button>
+     <button data-section="coupons" type="button">
+      卡券管理
+     </button>
+     <button data-section="batches" type="button">
+      导入批次
+     </button>
+     <button data-section="redemptions" type="button">
+      核销管理
+     </button>
+    </nav>
+    <button class="logout-button" id="logout-button" type="button">
+     退出登录
+    </button>
+   </aside>
+   <section class="admin-content" id="admin-content">
+    <header>
+     <div>
+      <span class="eyebrow">
+       ADMIN WORKSPACE
+      </span>
+      <h1 id="page-title">
+       总览
+      </h1>
+     </div>
+    </header>
+    <div class="notice notice--danger" hidden="" id="global-error">
+    </div>
+    <div aria-live="polite" class="notice notice--success admin-success-banner" hidden="" id="global-success" role="status">
+     <span class="admin-success-banner__icon">
+      &checkmark;
+     </span>
+     <strong id="global-success-text">
+     </strong>
+    </div>
+    <p id="global-loading">
+     正在加载后台数据&hellip;
+    </p>
+    <div id="page-panels">
+    </div>
+   </section>
+  </main>
+  <script src="/frontend/admin/js/app.js" type="module">
+  </script>
+ </body>
+</html>

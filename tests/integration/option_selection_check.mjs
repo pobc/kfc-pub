@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { initialSelection, selectedOptions, selectionComplete, toggleSelection } from '../../app/web/static/public/js/option-selection.js';
+
+// 测试数据由真实 PostgreSQL 中已保存的分组配置传入。
+const [meal, drink] = JSON.parse(readFileSync(0, 'utf8'));
+const [first, second, third] = meal.options.map((option) => option.id);
+let chosen = initialSelection(meal);
+assert.deepEqual(chosen, []);
+assert.equal(selectionComplete(meal, chosen), false);
+chosen = toggleSelection(meal, chosen, first);
+assert.equal(selectionComplete(meal, chosen), false);
+chosen = toggleSelection(meal, chosen, second);
+assert.deepEqual(chosen, [first, second]);
+assert.equal(selectionComplete(meal, chosen), true);
+assert.deepEqual(toggleSelection(meal, chosen, third), chosen);
+assert.deepEqual(initialSelection(meal, chosen), chosen);
+chosen = toggleSelection(meal, chosen, first);
+assert.equal(selectionComplete(meal, chosen), false);
+chosen = toggleSelection(meal, chosen, third);
+assert.deepEqual(chosen, [second, third]);
+assert.equal(selectionComplete(meal, chosen), true);
+assert.deepEqual(selectedOptions(meal, chosen).map((option) => option.id), [second, third]);
+let beverage = initialSelection(drink);
+assert.equal(selectionComplete(drink, beverage), true);
+beverage = toggleSelection(drink, beverage, drink.options[1].id);
+assert.deepEqual(beverage, [drink.options[1].id]);
+assert.deepEqual(toggleSelection(drink, beverage, beverage[0]), beverage);
+assert.equal(selectionComplete(meal, [first, first]), false);
+assert.equal(selectionComplete(meal, [first, drink.options[0].id]), false);

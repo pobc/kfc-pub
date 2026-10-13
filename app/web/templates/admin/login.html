@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#da291c" />
+  <link rel="icon" href="/static/favicon-admin.ico" />
+  <link rel="stylesheet" href="/frontend/admin/css/admin.css" />
+  <title>卡券管理 - 登录</title>
+</head>
+<body>
+  <main class="admin-login">
+    <section class="login-card">
+      <div class="brand-mark">点</div>
+      <span class="eyebrow">管理后台</span>
+      <h1>欢迎回来</h1>
+      <p>登录后管理 KFC Ticket、餐品、访问链接、卡券和核销记录。</p>
+      <form id="login-form">
+        <label>管理员账号<input id="username" autocomplete="username" required /></label>
+        <label>密码<input id="password" type="password" autocomplete="current-password" required /></label>
+        <div id="login-error" class="notice notice--danger" hidden></div>
+        <button id="login-submit" class="button button--primary button--block" type="submit">登录</button>
+      </form>
+    </section>
+  </main>
+  <script type="module" src="/frontend/admin/js/login.js"></script>
+</body>
+</html>

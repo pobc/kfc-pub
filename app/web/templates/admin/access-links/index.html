@@ -1,0 +1,22 @@
+<section class="admin-section admin-panel table-panel access-link-panel" data-panel="access-links" hidden="">
+<div class="panel-heading">
+<div><span class="access-link-panel__eyebrow">ACCESS LINKS</span><h2>访问链接管理</h2><p>批量生成 16 位访问 ID，并将每条链接绑定到指定餐品。</p></div>
+<div class="access-link-panel__count"><small>链接总数</small><strong id="access-all-total">0</strong></div>
+</div>
+<form class="admin-form access-link-create-form" id="access-create-form">
+<label><span>关联餐品</span><select id="access-product" required=""><option value="">请选择餐品</option></select></label>
+<label><span>生成数量</span><input id="access-count" max="500" min="1" required="" step="1" type="number" value="10"/></label>
+<button class="button button--primary" type="submit">批量生成链接</button>
+</form>
+<div class="access-link-filters">
+<input aria-label="搜索访问链接" id="access-search" placeholder="搜索访问 ID 或餐品名称" type="search"/>
+<select aria-label="按链接状态筛选" id="access-status"><option value="">全部状态</option><option value="UNUSED">待使用</option><option value="PROCESSING">核销处理中</option><option value="PICKING_UP">待取餐</option><option value="FAILED">下单失败</option><option value="COMPLETED">订单完结</option></select>
+<span>当前结果 <b id="access-total">0</b> 条</span>
+</div>
+<div class="data-table access-link-table">
+<div class="data-row access-link-row table-head"><span>访问链接</span><span>关联餐品</span><span>状态</span><span>生成时间</span><span>操作</span></div>
+<div id="access-rows"></div>
+<div class="table-empty" hidden="" id="access-empty"><strong>暂无访问链接</strong><small>选择餐品和数量后即可批量生成，默认每次 10 条。</small></div>
+</div>
+<nav aria-label="访问链接分页" class="redemption-pagination" hidden="" id="access-pagination"></nav>
+</section>

@@ -1,0 +1,49 @@
+<section class="admin-section admin-panel" data-panel="products" hidden="">
+  <div class="panel-heading">
+    <div>
+      <h2>餐品管理</h2>
+      <p>维护餐品基础信息，并为套餐餐品手动配置“主食、饮料”等可选餐品分组。</p>
+    </div>
+  </div>
+
+  <form class="product-create-form" id="product-form">
+    <input id="product-name" placeholder="餐品名称" required="" />
+    <input id="product-description" placeholder="餐品描述" />
+    <label class="image-upload-control">
+      <span id="product-image-label">上传餐品图片</span>
+      <input accept="image/jpeg,image/png,image/webp,image/gif" id="product-image" type="file" />
+    </label>
+    <img alt="餐品图片预览" class="product-upload-preview" hidden="" id="product-image-preview" />
+    <button class="button button--primary" type="submit">新增餐品</button>
+  </form>
+
+  <div class="data-table">
+    <div class="data-row product-crud-row table-head">
+      <span>餐品</span>
+      <span>关联卡券</span>
+      <span>可选配置</span>
+      <span>操作</span>
+    </div>
+    <div id="product-rows"></div>
+    <div class="table-empty" hidden="" id="product-empty">暂无餐品</div>
+  </div>
+
+  <dialog class="product-options-dialog" id="product-options-dialog">
+    <div class="product-options-dialog__header">
+      <div>
+        <span class="eyebrow">PRODUCT OPTIONS</span>
+        <h3 id="product-options-title">配置可选餐品</h3>
+        <p>可选餐品与 products 表里的其他餐品没有关联，名称和图片都在这里手动维护。</p>
+      </div>
+      <button class="dialog-close" type="button" data-close-dialog="product-options-dialog" aria-label="关闭">×</button>
+    </div>
+
+    <div class="product-option-groups" id="product-option-groups"></div>
+    <button class="product-option-add-group" id="product-option-add-group" type="button">+ 添加分组</button>
+
+    <div class="product-options-dialog__footer">
+      <button class="button button--dark" type="button" data-close-dialog="product-options-dialog">取消</button>
+      <button class="button button--primary" id="product-option-save" type="button">保存配置</button>
+    </div>
+  </dialog>
+</section>

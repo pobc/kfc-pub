@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#da291c" />
+  <link rel="icon" href="/static/favicon-order.ico" />
+  <link rel="stylesheet" href="/frontend/public/css/order.css" />
+  <title>专属点餐</title>
+</head>
+<body>
+  <main class="customer-shell">
+    <section id="loading-view" class="status-card"><span class="eyebrow">专属点餐</span><h1>正在校验专属链接</h1></section>
+    <div id="offline-notice" class="notice notice--warning" hidden>网络已断开，恢复后会继续查询。</div>
+    <div id="order-error" class="notice notice--danger" hidden></div>
+
+    <section id="store-view" class="page-stack" hidden>
+      <div class="hero-copy">
+        <span class="eyebrow">第一步</span>
+        <h1>选择取餐餐厅</h1>
+        <p>先选择取餐地区，再按名称或商圈搜索餐厅。</p>
+      </div>
+      <button id="city-open" class="select-field" type="button"><span><small>取餐地区</small><strong id="city-label">请选择地区</strong></span><b>›</b></button>
+      <form id="store-search-form" class="search-row"><input id="store-query" disabled placeholder="输入餐厅名称或商圈" /><button class="button button--dark" type="submit" disabled>搜索</button></form>
+      <div id="recent-searches" class="recent-searches" hidden><small>最近搜索</small><div id="recent-search-list" class="recent-search-list"></div></div>
+      <div id="store-list" class="card-list"></div>
+      <div id="store-empty" class="empty-card" hidden>请选择地区后搜索餐厅</div>
+    </section>
+
+    <section id="products-view" class="page-stack with-actionbar" hidden>
+      <button class="back-link" type="button" data-back="STORE">← 返回选择餐厅</button>
+      <div class="hero-copy"><span class="eyebrow">第二步 · 链接餐品</span></div>
+      <article id="selected-store" class="selected-store-card"></article>
+      <div id="product-list"></div>
+      <div class="actionbar"><button id="continue-order" class="button button--primary button--block" type="button">确认餐品</button></div>
+    </section>
+
+    <section id="confirm-view" class="page-stack with-actionbar" hidden>
+      <button class="back-link" type="button" data-back="PRODUCTS">← 返回修改餐品</button>
+      <div class="hero-copy"><span class="eyebrow">最后一步</span><h1>确认订单</h1></div>
+      <div id="confirm-store" class="summary-card"></div>
+      <div class="summary-card"><small>取餐方式</small><div class="recent-search-list"><button id="pack-dine" class="pickup-type-button--active" type="button" aria-pressed="true"><strong><span class="pack-check">✓</span> 堂食</strong><span>店内取餐用餐</span></button><button id="pack-takeaway" type="button" aria-pressed="false"><strong>外带</strong><span>取餐后带走</span></button></div></div>
+      <div class="summary-card"><small>餐品明细</small><div id="confirm-items"></div></div>
+      <div class="actionbar"><button id="apply-coupon" class="button button--primary button--block" type="button">确认下单</button></div>
+    </section>
+
+    <section id="processing-view" class="status-card" hidden><span class="eyebrow">核销队列</span><h1>正在核销</h1><p>请求已进入核销队列，请不要重复提交。页面会自动更新结果。</p></section>
+    <section id="coupon-applied-view" class="status-card status-card--success" hidden><span class="eyebrow">下单流程</span><h1>订单已确认</h1><p>卡券已使用，并已调用肯德基确认订单接口。</p></section>
+
+    <section id="pickup-view" class="page-stack pickup-page" hidden>
+      <span id="pickup-eyebrow" class="eyebrow"></span>
+      <h1 id="pickup-title">请留意取餐进度</h1>
+      <div class="pickup-number-card">
+        <small>取餐号</small><strong id="pickup-number">—</strong>
+        <span class="pickup-order-reference"><small>订单号</small><b id="pickup-order-number">—</b></span>
+      </div>
+      <div id="pickup-loading" class="pickup-loading" role="status" aria-label="正在查询">
+        <span class="pickup-spinner" aria-hidden="true"></span>
+      </div>
+      <p id="pickup-status" class="status-copy"></p>
+      <div id="pickup-store" class="summary-card"></div>
+      <div class="summary-card pickup-items-card"><small>餐品明细</small><div id="pickup-item-list"></div></div>
+    </section>
+
+    <section id="failed-view" class="status-card status-card--danger" hidden><span class="eyebrow">订单结果</span><h1>下单失败</h1><p>本次订单未能完成，请联系发放链接的商家处理。此链接不能再次下单。</p></section>
+    <section id="completed-view" class="status-card status-card--success" hidden><span class="eyebrow">订单状态</span><h1>订单已完结</h1><p>感谢使用，本链接已完成，不再提供重复下单。</p></section>
+    <section id="fatal-view" class="status-card status-card--danger" hidden><span class="eyebrow">链接异常</span><h1>无法打开专属链接</h1><p id="fatal-message">请检查链接后重试。</p><button id="retry-link" class="button button--dark button--block" type="button">重新校验</button></section>
+  </main>
+
+  <dialog id="city-dialog" class="city-dialog">
+    <div class="sheet-title"><h2>选择地区</h2><button id="city-close" type="button">×</button></div>
+    <input id="city-search" class="city-search" placeholder="搜索城市、省份或代码" />
+    <div id="city-list" class="city-list"></div>
+  </dialog>
+
+  <dialog id="verification-dialog" class="city-dialog verification-dialog">
+    <div class="sheet-title"><h2>访问验证</h2></div>
+    <p class="verification-copy">检测到无效链接访问次数较多，请先完成验证码再继续访问。</p>
+    <form id="verification-form" class="verification-form">
+      <div class="verification-captcha-row">
+        <img id="verification-image" class="verification-image" alt="验证码" />
+        <button id="verification-refresh" class="back-link" type="button">换一张</button>
+      </div>
+      <input id="verification-answer" class="city-search" inputmode="numeric" autocomplete="off" maxlength="6" placeholder="输入6位验证码" />
+      <div id="verification-error" class="notice notice--danger" hidden></div>
+      <button id="verification-submit" class="button button--primary button--block" type="submit">确认验证</button>
+    </form>
+  </dialog>
+
+  <script type="module" src="/frontend/public/js/order.js"></script>
+</body>
+</html>

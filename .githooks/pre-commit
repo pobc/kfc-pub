@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+python -m compileall -q app tools tests
+python -m ruff check app tools tests
+python -m ruff format --check app tools tests

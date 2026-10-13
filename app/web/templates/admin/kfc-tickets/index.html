@@ -1,0 +1,49 @@
+<section class="admin-section admin-panel" data-panel="kfc-tickets" hidden="">
+<div class="panel-heading kfc-ticket-heading">
+<div>
+<h2>KFC Ticket 管理</h2>
+<p>登录 KFC 后直接抓取完整浏览器登录状态，也可以手工新增 Ticket。</p>
+</div>
+<div class="kfc-ticket-heading__actions">
+<button class="button button--dark" id="capture-open" type="button">登录 KFC 并获取登录信息</button>
+<button class="button button--primary" id="ticket-open" type="button">＋ 新增 Ticket</button>
+</div>
+</div>
+<div class="data-table">
+<div class="data-row ticket-admin-row table-head">
+<span>名称</span><span>Ticket / userCode</span><span>openId</span><span>状态</span><span>登录状态</span><span>备注</span><span>操作</span><span>同步卡券</span><span>直接登录</span>
+</div>
+<div id="ticket-rows"></div>
+<div class="table-empty" hidden="" id="ticket-empty">还没有 KFC Ticket</div>
+</div>
+</section>
+<dialog class="admin-dialog" id="ticket-dialog">
+<form class="import-form" id="ticket-form" method="dialog">
+<div class="form-full admin-dialog__header"><div><span class="eyebrow">KFC TICKET</span><h2>新增 Ticket</h2></div><button class="admin-dialog__close" data-close-dialog="ticket-dialog" type="button">×</button></div>
+<label>手机号<input id="ticket-phone" placeholder="手机号" required=""/></label>
+<label>userCode<input id="ticket-user-code" placeholder="KFC userCode" required=""/></label>
+<label>openId<input id="ticket-open-id" placeholder="可选"/></label>
+<label class="form-full">Ticket<textarea id="ticket-ticket" placeholder="KFC ticket" required="" rows="3"></textarea></label>
+<label class="form-full">Cookie Header<textarea id="ticket-cookie" placeholder="可选" rows="3"></textarea></label>
+<label class="form-full">备注<input id="ticket-remark" placeholder="备注"/></label>
+<div class="form-full admin-dialog__actions"><button class="button dialog-secondary-button" data-close-dialog="ticket-dialog" type="button">取消</button><button class="button button--primary" type="submit">保存 Ticket</button></div>
+</form>
+</dialog>
+<dialog class="admin-dialog admin-dialog--capture" id="capture-dialog">
+<div class="admin-dialog__header"><div><span class="eyebrow">KFC SESSION</span><h2>获取 KFC 登录信息</h2></div><button class="admin-dialog__close" data-close-dialog="capture-dialog" type="button">×</button></div>
+<div id="capture-start-view"><p class="capture-help">点击下面按钮后，后台会直接启动 Chrome 并打开 KFC H5 登录页。</p><button class="button button--primary button--block" id="capture-start" type="button">打开 KFC 登录页面</button></div>
+<form class="capture-form" hidden="" id="capture-save-form">
+<div class="capture-status"><strong>Chrome 已打开 KFC 登录页</strong><p>在弹出的 Chrome 里完成手机号和验证码登录。账号名称自动使用登录手机号；如果这个手机号已经存在，只更新原记录。</p></div>
+<label>备注<input id="capture-remark" placeholder="可选"/></label>
+<div class="admin-dialog__actions"><button class="button dialog-secondary-button" data-close-dialog="capture-dialog" type="button">取消</button><button class="button button--primary" type="submit">登录完成，保存状态</button></div>
+</form>
+</dialog>
+<dialog class="admin-dialog admin-dialog--sync" id="ticket-sync-dialog">
+<form id="ticket-sync-dialog-form">
+<div class="admin-dialog__header"><div><span class="eyebrow">KFC COUPON SYNC</span><h2>同步卡券</h2></div><button class="admin-dialog__close" data-close-dialog="ticket-sync-dialog" type="button">×</button></div>
+<p class="capture-help" id="ticket-sync-help"></p>
+<div class="capture-status sync-rule-card"><strong>餐品类目自动匹配</strong><p>仅同步满足后端 KFC 同步规则的卡券；餐品名称与餐品管理中的名称完全一致时归入对应类目，未匹配的归入“其他”。</p></div>
+<label class="capture-form">批次名称<input id="ticket-sync-batch" placeholder="可空，默认按 Ticket 和日期生成"/></label>
+<div class="admin-dialog__actions"><button class="button dialog-secondary-button" data-close-dialog="ticket-sync-dialog" type="button">取消</button><button class="button button--primary" type="submit">同步卡券</button></div>
+</form>
+</dialog>

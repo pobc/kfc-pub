@@ -1,0 +1,33 @@
+<section class="admin-section admin-panel table-panel coupon-panel" data-panel="coupons" hidden="">
+<div class="panel-heading">
+<div><span class="coupon-panel__eyebrow">卡券中心</span><h2>卡券管理</h2><p>统一同步、筛选和管理 KFC 卡券，卡券状态以 KFC 返回结果为准。</p></div>
+<div class="coupon-panel__stats"><span><small>卡券总数</small><strong id="coupon-all-count">0</strong></span><span><small>当前结果</small><strong id="coupon-filter-count">0</strong></span></div>
+</div>
+<form class="admin-form coupon-sync-form" id="coupon-sync-form">
+<label><span>KFC Ticket</span><select id="sync-ticket" required=""><option value="">选择用于同步的 Ticket</option></select></label>
+<label><span>同步批次</span><input id="sync-batch-name" placeholder="留空则自动生成批次名称"/></label>
+<button class="button button--primary" type="submit">从 KFC 同步卡券</button>
+</form>
+<form class="coupon-query" id="coupon-query-form">
+<div class="coupon-query__heading"><div><strong>筛选卡券</strong><small>支持组合条件查询，结果按创建时间倒序排列</small></div><span hidden="" id="coupon-filter-badge">已启用筛选</span></div>
+<label><span>卡券码</span><input id="coupon-code-query" placeholder="输入卡券码" type="search"/></label>
+<label><span>餐品名称</span><input id="coupon-product-query" placeholder="输入餐品名称" type="search"/></label>
+<label><span>用途</span><select id="coupon-scope-query"><option value="">全部用途</option><option value="STORE">到店</option><option value="DELIVERY">外送</option><option value="BOTH">到店、外送</option><option value="OTHER">其他</option><option value="UNKNOWN">未知</option></select></label>
+<label><span>KFC 状态</span><select id="coupon-status-query"><option value="">全部状态</option><option selected="" value="AVAILABLE">有效</option><option value="USED">已使用</option><option value="EXPIRED">已过期</option><option value="REFUNDED">已退款</option></select></label>
+<label><span>本地状态</span><select id="coupon-local-status-query"><option value="">全部本地状态</option><option value="wait">wait</option></select></label>
+<label><span>导入批次</span><select id="coupon-batch-query"><option value="">全部批次</option></select></label>
+<label><span>创建日期从</span><input id="coupon-created-from" type="date"/></label>
+<label><span>创建日期到</span><input id="coupon-created-to" type="date"/></label>
+<button class="button coupon-query__reset" id="coupon-reset" type="button">重置筛选</button>
+</form>
+<div class="table-filters coupon-category">
+<div class="coupon-category__heading"><div><strong>餐品分类</strong><small>选择分类查看对应卡券</small></div><span id="coupon-category-count">0 张</span></div>
+<div aria-label="卡券餐品类目" class="filter-tabs product-tabs" id="coupon-product-tabs" role="tablist"></div>
+</div>
+<div class="data-table coupon-data-table">
+<div class="data-row coupon-admin-row table-head"><span>ID</span><span>卡券码</span><span>产品名称</span><span>KFC 状态</span><span>本地状态</span><span>导入批次</span><span>创建时间</span><span>操作</span></div>
+<div id="coupon-rows"></div>
+<div class="table-empty coupon-table-empty" hidden="" id="coupon-empty"><strong>暂无卡券</strong><small>请先选择 KFC Ticket 同步卡券</small></div>
+</div>
+</section>
+
